@@ -1,7 +1,8 @@
 // Moment.js
 var currentDate = moment().format('dddd') + " " + moment().format("Do MMM YYYY");
 var currentHour = moment().format('h:mm:ss a');
-// Var for Times //
+
+// Times //
 var nineAm = $("#9am");
 var tenAm = $("#10am");
 var elevenAm = $("#11am");
@@ -19,7 +20,7 @@ var userInput;
 var hourSpan;
 // var hourString = $(".hour").text().split(" ");
 
-// Date and Hour
+// Date and Hour//
 
 var interval = setInterval(function() {
   var momentNow = moment();
@@ -90,7 +91,7 @@ $(document).ready(function(){
   initPage()
   background()
 
-  // Buttons - Local storage
+  // Local storage //
   $(".saveBtn").on("click", function(){
     userInput = $(this).siblings(".form-control").val().trim();
     console.log(userInput);
